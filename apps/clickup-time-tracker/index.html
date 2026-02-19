@@ -36,30 +36,91 @@
       </div>
       <div class="app-detail-actions">
         <a href="#" class="btn btn-primary">Install from Zendesk Marketplace</a>
-        <a href="#screenshots" class="btn btn-outline">View Screenshots</a>
+        <a href="#features" class="btn btn-outline">View Features</a>
       </div>
     </div>
   </section>
 
-  <!-- Features -->
-  <section class="features-section">
+  <!-- Feature Showcase: alternating text + screenshot -->
+  <section id="features" class="showcase-section">
     <div class="container">
-      <h2 class="section-title">Features</h2>
+
+      <!-- 1. Task linked -->
+      <div class="showcase-row">
+        <div class="showcase-text">
+          <h2>Create &amp; Link Tasks</h2>
+          <p>Create new ClickUp tasks directly from any Zendesk ticket, or link to existing ones with the searchable task picker. Task status, priority, and project info are visible at a glance.</p>
+          <ul class="showcase-list">
+            <li>Auto-names tasks with ticket subject and ID</li>
+            <li>View task status and priority inline</li>
+            <li>Click through to ClickUp with one click</li>
+          </ul>
+        </div>
+        <div class="showcase-image">
+          <img src="screenshots/task-linked.png" alt="Linked task with status and time tracking">
+        </div>
+      </div>
+
+      <!-- 2. Organization mapping -->
+      <div class="showcase-row showcase-row-reverse">
+        <div class="showcase-text">
+          <h2>Organization Mapping</h2>
+          <p>Map each Zendesk organization to a ClickUp space, folder, and list. Once configured, new tasks are automatically scoped to the right project — no manual selection needed.</p>
+          <ul class="showcase-list">
+            <li>Browse workspaces, spaces, folders, and lists</li>
+            <li>One-time setup per organization</li>
+            <li>Shared across all agents</li>
+          </ul>
+        </div>
+        <div class="showcase-image">
+          <img src="screenshots/setup-mapping.png" alt="Map organizations to ClickUp lists">
+        </div>
+      </div>
+
+      <!-- 3. Timer running -->
+      <div class="showcase-row">
+        <div class="showcase-text">
+          <h2>Live Time Tracking</h2>
+          <p>Start a timer with one click and see it counting in real time. When you stop, optionally add a description before the entry is logged to ClickUp. Review and edit entries anytime.</p>
+          <ul class="showcase-list">
+            <li>One-click start/stop timer</li>
+            <li>Add descriptions when stopping</li>
+            <li>Log manual time entries</li>
+          </ul>
+        </div>
+        <div class="showcase-image">
+          <img src="screenshots/timer-running.png" alt="Live timer tracking time on a task">
+        </div>
+      </div>
+
+      <!-- 4. Timer awareness -->
+      <div class="showcase-row showcase-row-reverse">
+        <div class="showcase-text">
+          <h2>Timer Awareness</h2>
+          <p>Switch between tickets without losing track. If a timer is running on another task, a banner shows which one — with links to both ClickUp and the Zendesk ticket.</p>
+          <ul class="showcase-list">
+            <li>See running timer across all tickets</li>
+            <li>"Stop &amp; Switch" to the current task</li>
+            <li>Direct links to ClickUp task</li>
+          </ul>
+        </div>
+        <div class="showcase-image">
+          <img src="screenshots/timer-banner.png" alt="Timer awareness banner showing running timer on different task">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- More Features Grid -->
+  <section class="features-section" style="background: var(--color-bg-alt);">
+    <div class="container">
+      <h2 class="section-title">Everything You Need</h2>
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon">⏱️</div>
-          <h3>Live Time Tracking</h3>
-          <p>Start and stop a timer on any ClickUp task directly from the Zendesk sidebar. Entries are logged to ClickUp with optional descriptions.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">📋</div>
-          <h3>Create &amp; Link Tasks</h3>
-          <p>Create new ClickUp tasks or link existing ones to Zendesk tickets. Searchable task picker with subtask support.</p>
-        </div>
-        <div class="feature-card">
           <div class="feature-icon">🔄</div>
-          <h3>Status Sync</h3>
-          <p>Automatically close ClickUp tasks when Zendesk tickets are solved. Change task status directly from the sidebar.</p>
+          <h3>Auto-Close Sync</h3>
+          <p>When a Zendesk ticket is solved or closed, the linked ClickUp task status is automatically updated.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">👥</div>
@@ -67,35 +128,15 @@
           <p>Each agent connects their own ClickUp account. Time entries are attributed to the right person.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">🏢</div>
-          <h3>Organization Mapping</h3>
-          <p>Map Zendesk organizations to ClickUp lists. Tasks are automatically scoped to the right project.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🔔</div>
-          <h3>Timer Awareness</h3>
-          <p>See when a timer is running on a different task. Stop or switch with one click — no lost time entries.</p>
+          <div class="feature-icon">🔍</div>
+          <h3>Searchable Task Picker</h3>
+          <p>Link existing tasks with a searchable dropdown — including subtasks. No need to copy-paste IDs.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Screenshots -->
-  <section id="screenshots" class="screenshots-section">
-    <div class="container">
-      <h2 class="section-title">Screenshots</h2>
-      <p class="about-text" style="margin-bottom: 32px;">See ClickUp Time Tracker in action inside the Zendesk sidebar.</p>
-      <div class="screenshots-grid">
-        <!-- Screenshots will be added here -->
-        <div class="screenshot">
-          <img src="screenshots/placeholder.png" alt="ClickUp Time Tracker in Zendesk">
-          <div class="screenshot-caption">Task view with live timer</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Setup -->
+  <!-- Getting Started -->
   <section class="features-section">
     <div class="container">
       <h2 class="section-title">Getting Started</h2>

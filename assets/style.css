@@ -242,6 +242,91 @@ a:hover {
 }
 
 /* ==========================================================================
+   Showcase (Text + Screenshot alternating rows)
+   ========================================================================== */
+
+.showcase-section {
+  padding: 80px 0;
+}
+
+.showcase-row {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin-bottom: 80px;
+}
+.showcase-row:last-child {
+  margin-bottom: 0;
+}
+
+.showcase-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.showcase-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.showcase-text h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.showcase-text p {
+  font-size: 15px;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.showcase-list {
+  list-style: none;
+  padding: 0;
+}
+.showcase-list li {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  padding: 6px 0 6px 24px;
+  position: relative;
+}
+.showcase-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.showcase-image {
+  flex: 0 0 340px;
+  max-width: 340px;
+}
+.showcase-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .showcase-row,
+  .showcase-row-reverse {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+  .showcase-image {
+    flex: none;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .showcase-list li {
+    text-align: left;
+  }
+}
+
+/* ==========================================================================
    App Detail Page
    ========================================================================== */
 
