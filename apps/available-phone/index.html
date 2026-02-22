@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available Phone — Available Apps</title>
+  <meta name="description" content="Unified telephony app for Zendesk — see caller info, create tickets, and track calls with Relatel, FlexFone, MobiKOM, and ipnordic.">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">A</span>
+        <span class="logo-text">Available <span class="logo-apps">Apps</span></span>
+      </a>
+      <nav class="nav">
+        <a href="/#apps">All Apps</a>
+        <a href="https://available.dk" target="_blank">available.dk</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- App Hero -->
+  <section class="app-detail-hero">
+    <div class="container">
+      <div class="app-detail-header">
+        <img src="icon.png" alt="Available Phone" class="app-detail-icon">
+        <div class="app-detail-title">
+          <h1>Available Phone</h1>
+          <p>Unified telephony for Zendesk — Relatel, FlexFone, MobiKOM &amp; ipnordic in one app.</p>
+        </div>
+      </div>
+      <div class="app-detail-actions">
+        <a href="#" class="btn btn-primary">Install from Zendesk Marketplace</a>
+        <a href="#features" class="btn btn-outline">View Features</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Showcase: alternating text + screenshot -->
+  <section id="features" class="showcase-section">
+    <div class="container">
+
+      <!-- 1. Incoming Call -->
+      <div class="showcase-row">
+        <div class="showcase-text">
+          <h2>Instant Caller Info</h2>
+          <p>When a call comes in, Available Phone pops up the caller's details instantly — name, company, and recent tickets. Agents have full context before they even pick up.</p>
+          <ul class="showcase-list">
+            <li>Automatic caller identification via phone number</li>
+            <li>Shows organization, contact details, and role</li>
+            <li>Recent tickets listed for quick reference</li>
+            <li>One-click ticket creation from the call popup</li>
+          </ul>
+        </div>
+        <div class="showcase-image">
+          <img src="screenshots/incoming-call.png" alt="Incoming call popup showing caller info and recent tickets">
+        </div>
+      </div>
+
+      <!-- 2. Provider Setup -->
+      <div class="showcase-row showcase-row-reverse">
+        <div class="showcase-text">
+          <h2>Multi-Provider Support</h2>
+          <p>One app for all major Danish telephony providers. Select your provider during setup and you're ready to go — no need for separate apps per system.</p>
+          <ul class="showcase-list">
+            <li>Relatel — real-time WebSocket integration</li>
+            <li>FlexFone — webhook-based call events</li>
+            <li>MobiKOM — webhook-based call events</li>
+            <li>ipnordic — webhook-based call events</li>
+          </ul>
+        </div>
+        <div class="showcase-image">
+          <img src="screenshots/provider-setup.png" alt="Provider selection during app setup">
+        </div>
+      </div>
+
+      <!-- 3. Call History -->
+      <div class="showcase-row">
+        <div class="showcase-text">
+          <h2>Call History &amp; Logging</h2>
+          <p>Every call is logged automatically. Search and filter past calls, see duration and direction, and jump to related tickets — all from the top bar.</p>
+          <ul class="showcase-list">
+            <li>Full call log with incoming, outgoing, and missed calls</li>
+            <li>Search by phone number, contact name, or organization</li>
+            <li>Call duration and timestamps at a glance</li>
+            <li>Direct links to related Zendesk tickets</li>
+          </ul>
+        </div>
+        <div class="showcase-image">
+          <img src="screenshots/call-history.png" alt="Call history with search and filtering">
+        </div>
+      </div>
+
+      <!-- 4. Ticket Sidebar -->
+      <div class="showcase-row showcase-row-reverse">
+        <div class="showcase-text">
+          <h2>Ticket Sidebar Integration</h2>
+          <p>When viewing a ticket, the sidebar shows the contact's phone details and call history. Click to call directly from the ticket — no switching between apps.</p>
+          <ul class="showcase-list">
+            <li>Contact phone info visible on every ticket</li>
+            <li>Call history for the specific contact</li>
+            <li>Click-to-call directly from Zendesk</li>
+            <li>Automatic ticket creation from calls</li>
+          </ul>
+        </div>
+        <div class="showcase-image">
+          <img src="screenshots/ticket-sidebar.png" alt="Ticket sidebar showing contact phone details">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- More Features Grid -->
+  <section class="features-section" style="background: var(--color-bg-alt);">
+    <div class="container">
+      <h2 class="section-title">Everything You Need</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🏢</div>
+          <h3>Multi-Tenant</h3>
+          <p>Each Zendesk instance gets its own isolated configuration. Perfect for consultancies managing multiple clients.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Real-Time Events</h3>
+          <p>Call notifications appear instantly via WebSocket or webhook — no polling, no delays.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔌</div>
+          <h3>Easy Provider Setup</h3>
+          <p>Select your telephony provider, enter your credentials, and you're live in minutes.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎫</div>
+          <h3>Auto-Create Tickets</h3>
+          <p>Automatically create Zendesk tickets from incoming calls with caller details pre-filled.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👤</div>
+          <h3>Agent Mapping</h3>
+          <p>Map each telephony extension to a Zendesk agent. Calls route to the right person automatically.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Call Analytics</h3>
+          <p>Track call volume, duration, and missed calls per agent or organization over time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Getting Started -->
+  <section class="features-section">
+    <div class="container">
+      <h2 class="section-title">Getting Started</h2>
+      <div style="max-width: 600px; margin: 0 auto;">
+        <div class="feature-card" style="margin-bottom: 16px;">
+          <h3>1. Install the app</h3>
+          <p>Install Available Phone from the Zendesk Marketplace. The app appears in the top bar and ticket sidebar.</p>
+        </div>
+        <div class="feature-card" style="margin-bottom: 16px;">
+          <h3>2. Select your provider</h3>
+          <p>Open the app and choose your telephony provider — Relatel, FlexFone, MobiKOM, or ipnordic.</p>
+        </div>
+        <div class="feature-card" style="margin-bottom: 16px;">
+          <h3>3. Configure webhooks</h3>
+          <p>Point your provider's webhook URL to Available Phone. We provide the exact URL during setup.</p>
+        </div>
+        <div class="feature-card">
+          <h3>4. Start receiving calls</h3>
+          <p>That's it — incoming calls now show caller info, and agents can create tickets with one click.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Providers Section -->
+  <section class="about-section">
+    <div class="container">
+      <h2 class="section-title">Supported Providers</h2>
+      <p class="about-text">
+        Available Phone works with Denmark's leading telephony providers. One app, one setup — regardless of which system you use.
+      </p>
+      <div class="trust-badges">
+        <div class="trust-badge">📞 Relatel</div>
+        <div class="trust-badge">📞 FlexFone</div>
+        <div class="trust-badge">📞 MobiKOM</div>
+        <div class="trust-badge">📞 ipnordic</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span>&copy; 2026 Available ApS</span>
+        <a href="../../legal/privacy-policy.html">Privacy Policy</a>
+        <a href="../../legal/terms-of-service.html">Terms of Service</a>
+      </div>
+      <div class="footer-right">
+        <a href="https://available.dk" target="_blank">available.dk</a>
+        <a href="mailto:zendesk@available.dk">zendesk@available.dk</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
